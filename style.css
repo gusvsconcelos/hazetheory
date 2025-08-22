@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetbrainsMono Nerd Font";
+  background-color: #1a1b26;
+  color: #c0caf5;
+}
+
+.container {
+  max-width: 1080px;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav > a {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  color: #7dcfff;
+}
+
+nav > a:hover {
+  color: #b4f9f8;
+}
+
+#lang {
+  display: inline-flex;
+  justify-content: space-evenly;
+  justify-content: center;
+}
+
+label {
+  font-size: 16px;
+  margin-right: 8px;
+  margin-left: 15px;
+  color: #414868;
+}
+
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  background-color: #1a1b26;
+  color: #414868;
+}
+
+option {
+  background-color: #1a1b26;
+}
+
+a {
+  color: #c0caf5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e6e7ed;
+}
+
+p {
+  color: #a9b1d6;
+}
+
+#hero {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#hero-quote {
+  width: 500px;
+}
+
+#hero-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero-photo > * {
+  margin: auto;
+}
+
+#hero-photo > p {
+  padding: 14px;
+  border: #a9b1d6 solid 1px;
+}
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#project-list > * {
+  width: 300px;
+  padding: 8px;
+  border: #a9b1d6 solid 1px;
+}
+
+#skillSet > span {
+  padding: 6px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1b26;
+}
+
+#skill1 {
+  background-color: #f7768e;
+}
+
+#skill2 {
+  background-color: #ff9e64;
+}
+
+#skill3 {
+  background-color: #7aa2f7;
+}
+
+#skill4 {
+  background-color: #bb9af7;
+}
+
+#skill5 {
+  background-color: #9ece6a;
+}
+
+#skill6 {
+  background-color: #73dacb;
+}
+
+#skill7 {
+  background-color: #2ac3de;
+}

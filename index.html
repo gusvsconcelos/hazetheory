@@ -1,105 +1,151 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>HAZE THEORY | Gustavo Vasconcelos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HAZE THEORY | Gustavo Vasconcelos</title>
-  <style>
-    #project-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Navigation --->
-  <header>
-    <a href="index.html">
-      <h1>HAZE THEORY</h1>
-    </a>
-
-    <h2>Por Gustavo Vasconcelos</h2>
-
-    <nav>
+  <body>
+    <div class="container">
+      <!-- Navigation --->
       <div id="media">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Instagram</a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
 
-      <a href="#">#página inicial</a>
-      <a href="#">#projetos</a>
-      <a href="#">#blog</a>
-      <a href="#">#sobre mim</a>
-      <a href="#">#contato</a>
-
-
-      <label for="language">Idioma</label>
-      <select name="language" id="language">
-        <option value="PT">Portugês</option>
-        <option value="EN">English</option>
-      </select>
-    </nav>
-  </header>
-
-  <!-- Hero section --->
-  <section id="hero" aria-label="Apresentação pessoal">
-    <h1>Eu sou o Gus.</h1>
-    <p>
-      Dev full stack que cria soluções completas — do banco de dados à interface, com foco em clareza, performance e
-      boa experiência.
-    </p>
-    <a id="contact-me" href="#">Fale comigo</a>
-
-    <img src="./assets/gus_photo_low.png" alt="Fotografia de Gustavo Vasconcelos" height="400px">
-    <div id="quote">"It's better to be a pirate than join the navy."</div>
-  </section>
-
-  <!-- Main content --->
-  <main>
-    <section id="projects" aria-label="Projetos">
-      <h2>#projetos</h2>
-      <div id="project-list">
-        <div style="border: solid; width: 300px; margin: 4px;" id="project-1">
-          <img src="./assets/project-placeholder.jpg" alt="project-thumbnail" height="200px" width="300px">
-          <p>HTML CSS JavaScript</p>
-          <p><strong>Project#1</strong></p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quaerat reiciendis quasi molestias
-            similique
-            doloremque.</p>
+      <header>
+        <div id="title">
+          <a href="index.html"><h1>HAZE THEORY</h1></a>
+          <h2>Por Gustavo Vasconcelos</h2>
         </div>
 
-        <div style="border: solid; width: 300px; margin: 4px;" id="project-2">
-          <img src="./assets/project-placeholder.jpg" alt="project-thumbnail" height="200px" width="300px">
-          <p>HTML CSS JavaScript</p>
-          <p><strong>Project#2</strong></p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quaerat reiciendis quasi molestias
-            similique
-            doloremque.</p>
-        </div>
+        <nav>
+          <a href="#">#página inicial</a>
+          <a href="#">#projetos</a>
+          <a href="#">#sobre mim</a>
+          <a href="#">#contato</a>
 
-        <div style="border: solid; width: 300px; margin: 4px;" id="project-3">
-          <img src="./assets/project-placeholder.jpg" alt="project-thumbnail" height="200px" width="300px">
-          <p>HTML CSS JavaScript</p>
-          <p><strong>Project#3</strong></p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quaerat reiciendis quasi molestias
-            similique
-            doloremque.</p>
-        </div>
-      </div>
-    </section>
+          <span id="lang">
+            <label for="language"><i class="fas fa-globe"></i></label>
+            <select name="language" id="language">
+              <option value="PT">Português</option>
+              <option value="EN">English</option>
+            </select>
+          </span>
+        </nav>
+      </header>
 
-    <section id="skills" aria-label="Habilidades">
-      <h2>#habilidades</h2>
-    </section>
+      <!-- Hero section --->
+      <section id="hero" aria-label="Apresentação pessoal">
+        <span id="hero-quote">
+          <h1>Eu sou o Gus.</h1>
+          <p>
+            Dev full stack que cria soluções completas — do banco de dados à
+            interface, com foco em clareza, performance e boa experiência.
+          </p>
+          <a id="contact-me" href="#">Fale comigo</a>
+        </span>
 
-    <section id="about-me" aria-label="Sobre mim">
-      <h2>#sobre mim</h2>
-    </section>
-  </main>
-</body>
+        <br />
 
+        <span id="hero-photo">
+          <img
+            src="./assets/gus_photo_low.png"
+            alt="Fotografia de Gustavo Vasconcelos"
+            height="400px"
+          />
+          <p id="quote">"It's better to be a pirate than join the navy."</p>
+        </span>
+      </section>
+
+      <!-- Main content --->
+      <main>
+        <section id="projects" aria-label="Projetos">
+          <h2>#projetos</h2>
+
+          <div id="project-list">
+            <div id="project-1">
+              <img
+                src="./assets/project-placeholder.jpg"
+                alt="project-thumbnail"
+                height="200px"
+                width="300px"
+              />
+              <p>HTML CSS JavaScript</p>
+              <p><strong>Project#1</strong></p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+                quaerat reiciendis quasi molestias similique doloremque.
+              </p>
+            </div>
+
+            <div id="project-2">
+              <img
+                src="./assets/project-placeholder.jpg"
+                alt="project-thumbnail"
+                height="200px"
+                width="300px"
+              />
+              <p>HTML CSS JavaScript</p>
+              <p><strong>Project#2</strong></p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+                quaerat reiciendis quasi molestias similique doloremque.
+              </p>
+            </div>
+
+            <div id="project-3">
+              <img
+                src="./assets/project-placeholder.jpg"
+                alt="project-thumbnail"
+                height="200px"
+                width="300px"
+              />
+              <p>HTML CSS JavaScript</p>
+              <p><strong>Project#3</strong></p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+                quaerat reiciendis quasi molestias similique doloremque.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" aria-label="Habilidades">
+          <h2>#habilidades</h2>
+          <div id="skillSet">
+            <span id="skill1">JAVASCRIPT</span>
+            <span id="skill2">TYPESCRIPT</span>
+            <span id="skill3">REACT</span>
+            <span id="skill4">NODE.JS</span>
+            <span id="skill5">PYTHON</span>
+            <span id="skill5">HTML</span>
+            <span id="skill6">CSS</span>
+            <span id="skill7">TAILWINDCSS</span>
+          </div>
+        </section>
+
+        <section id="about-me" aria-label="Sobre mim">
+          <h2>#sobre mim</h2>
+
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas e autodidata em
+            Ciência da Computação pela Universidade Brasileira Livre, focado em
+            tecnologias modernas para desenvolvimento web. Tenho experiência
+            prática com TypeScript, React, Node.js e PostgreSQL, aplicando
+            princípios de arquitetura full stack em projetos pessoais. Tenho
+            interesse especial em boas práticas de desenvolvimento,
+            versionamento com Git e criação de APIs RESTful.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
