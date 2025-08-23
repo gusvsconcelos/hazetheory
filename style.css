@@ -1,28 +1,67 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   font-family: "JetbrainsMono Nerd Font";
   background-color: #1a1b26;
   color: #c0caf5;
 }
 
+strong {
+  color: #c0caf5;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+#media {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 18px;
+}
+
+#media > a {
+  font-size: 18px;
+}
+
+#line-media {
+  width: 100vw;
+  height: 2px;
+  background-color: #c0caf5;
+}
+
 .container {
+  margin: auto;
   max-width: 1080px;
+  padding: 0;
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: row;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #1a1b26;
 }
 
 header h1 {
   margin: 0;
   font-size: 48px;
+}
+
+header h1:hover {
+  color: #c0caf5;
 }
 
 header h2 {
@@ -43,6 +82,8 @@ nav > a {
 
 nav > a:hover {
   color: #b4f9f8;
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 #lang {
@@ -53,22 +94,18 @@ nav > a:hover {
 
 label {
   font-size: 16px;
-  margin-right: 8px;
+  margin-right: 3px;
   margin-left: 15px;
   color: #414868;
 }
 
 select {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   border: none;
-  font-weight: bold;
   background-color: #1a1b26;
   color: #414868;
-}
-
-option {
-  background-color: #1a1b26;
+  font-family: "JetbrainsMono Nerd Font";
 }
 
 a {
@@ -84,15 +121,34 @@ p {
   color: #a9b1d6;
 }
 
+#line {
+  width: 4px;
+  height: 180px;
+  margin-right: 24px;
+  border-radius: 50px;
+  background-color: #f7768e;
+}
+
 #hero {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: row;
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 #hero-quote {
-  width: 500px;
+  max-width: 420px;
+  text-align: justify;
+}
+
+#hero-quote > h1 {
+  margin: 0;
+}
+
+#hero-quote i {
+  margin-right: 12px;
 }
 
 #hero-photo {
@@ -103,59 +159,137 @@ p {
 }
 
 #hero-photo > * {
-  margin: auto;
+  margin: 0;
 }
 
 #hero-photo > p {
-  padding: 14px;
-  border: #a9b1d6 solid 1px;
+  padding: 16px;
+  border-radius: 3px;
+  border: #a9b1d6 solid 2px;
+  font-style: italic;
 }
 
 #project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  margin-bottom: 150px;
+  gap: 14px;
 }
 
-#project-list > * {
+#project-list > div {
   width: 300px;
-  padding: 8px;
-  border: #a9b1d6 solid 1px;
+  padding: 14px;
+  border-radius: 3px;
+  background-color: #11111b;
 }
 
-#skillSet > span {
-  padding: 6px;
-  margin: 2px;
-  border-radius: 4px;
+#project-list img {
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+#project-list h4 {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#project-list p {
+  margin: 0;
   font-size: 14px;
+  text-align: justify;
+}
+
+#skillSet {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+#skillSet > span,
+#project-tech > span {
+  margin: 4px;
+  padding: 6px;
+  border-radius: 2px;
+  font-size: 16px;
   font-weight: bold;
   color: #1a1b26;
 }
 
-#skill1 {
-  background-color: #f7768e;
+#project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6px;
 }
 
-#skill2 {
+#project-tech > span {
+  margin: 3px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.tech-javascript {
   background-color: #ff9e64;
 }
 
-#skill3 {
+.tech-typescript {
   background-color: #7aa2f7;
 }
 
-#skill4 {
-  background-color: #bb9af7;
+.tech-react {
+  background-color: #7dcfff;
 }
 
-#skill5 {
+.tech-nodejs {
   background-color: #9ece6a;
 }
 
-#skill6 {
-  background-color: #73dacb;
+.tech-python {
+  background-color: #e0af68;
 }
 
-#skill7 {
+.tech-html {
+  background-color: #f7768e;
+}
+
+.tech-css {
   background-color: #2ac3de;
+}
+
+.tech-tailwindcss {
+  background-color: #b4f9f8;
+}
+
+#about-me {
+  margin-bottom: 150px;
+}
+
+#about-me p {
+  max-width: 900px;
+  text-align: justify;
+}
+
+#aboutme-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#aboutme-container > div {
+  height: 120px;
+}
+
+footer > p {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #11111b;
+}
+
+footer i {
+  margin-right: 10px;
 }
