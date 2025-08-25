@@ -9,6 +9,25 @@ body {
   color: #c0caf5;
 }
 
+.container {
+  margin: auto;
+  max-width: 1080px;
+  padding: 0;
+}
+
+a {
+  color: #c0caf5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e6e7ed;
+}
+
+p {
+  color: #a9b1d6;
+}
+
 strong {
   color: #c0caf5;
 }
@@ -18,8 +37,19 @@ img {
   user-select: none;
 }
 
+.hashtag {
+  color: #bb9af7;
+}
+
+#line {
+  width: 4px;
+  height: 180px;
+  margin-right: 24px;
+  border-radius: 50px;
+  background-color: #f7768e;
+}
+
 #media {
-  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,15 +62,9 @@ img {
 }
 
 #line-media {
-  width: 100vw;
+  width: 450px;
   height: 2px;
   background-color: #c0caf5;
-}
-
-.container {
-  margin: auto;
-  max-width: 1080px;
-  padding: 0;
 }
 
 header {
@@ -58,15 +82,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 48px;
-}
-
-header h1:hover {
-  color: #c0caf5;
+  color: #73dacb;
 }
 
 header h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 nav {
@@ -77,7 +98,6 @@ nav > a {
   margin-left: 8px;
   margin-right: 8px;
   font-weight: bold;
-  color: #7dcfff;
 }
 
 nav > a:hover {
@@ -108,46 +128,25 @@ select {
   font-family: "JetbrainsMono Nerd Font";
 }
 
-a {
-  color: #c0caf5;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e6e7ed;
-}
-
-p {
-  color: #a9b1d6;
-}
-
-#line {
-  width: 4px;
-  height: 180px;
-  margin-right: 24px;
-  border-radius: 50px;
-  background-color: #f7768e;
-}
-
 #hero {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: row;
-  margin-top: 180px;
-  margin-bottom: 180px;
+  margin-top: 120px;
+  margin-bottom: 150px;
 }
 
-#hero-quote {
+#hero-greeting {
   max-width: 420px;
   text-align: justify;
 }
 
-#hero-quote > h1 {
+#hero-greeting > h1 {
   margin: 0;
 }
 
-#hero-quote i {
+#hero-greeting i {
   margin-right: 12px;
 }
 
@@ -160,6 +159,10 @@ p {
 
 #hero-photo > * {
   margin: 0;
+}
+
+#hero-photo > img {
+  width: 500px;
 }
 
 #hero-photo > p {
