@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "JetbrainsMono Nerd Font";
+  font-family: "JetBrains Mono";
   background-color: #1a1b26;
   color: #c0caf5;
 }
@@ -12,7 +14,6 @@ body {
 .container {
   margin: auto;
   max-width: 1080px;
-  padding: 0;
 }
 
 a {
@@ -41,11 +42,19 @@ img {
   color: #bb9af7;
 }
 
-#line {
+.text {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.text::before {
+  content: "";
+  flex-shrink: 0;
+  height: auto;
+  align-self: stretch;
   width: 4px;
-  height: 180px;
-  margin-right: 24px;
-  border-radius: 50px;
+  border-radius: 100px;
   background-color: #f7768e;
 }
 
@@ -54,16 +63,20 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 18px;
+  padding-top: 4px;
+  gap: 16px;
 }
 
 #media > a {
   font-size: 18px;
 }
 
-#line-media {
-  width: 450px;
-  height: 2px;
+#media::before,
+#media::after {
+  content: "";
+  flex-grow: 1;
+  height: 3px;
+  border-radius: 100px;
   background-color: #c0caf5;
 }
 
@@ -82,7 +95,6 @@ header {
 header h1 {
   margin: 0;
   font-size: 48px;
-  color: #73dacb;
 }
 
 header h2 {
@@ -101,9 +113,9 @@ nav > a {
 }
 
 nav > a:hover {
-  color: #b4f9f8;
   text-decoration: underline;
   text-underline-offset: 8px;
+  color: #b4f9f8;
 }
 
 #lang {
@@ -113,7 +125,6 @@ nav > a:hover {
 }
 
 label {
-  font-size: 16px;
   margin-right: 3px;
   margin-left: 15px;
   color: #414868;
@@ -124,8 +135,9 @@ select {
   padding-top: 0;
   border: none;
   background-color: #1a1b26;
-  color: #414868;
   font-family: "JetbrainsMono Nerd Font";
+  font-weight: bold;
+  color: #414868;
 }
 
 #hero {
@@ -133,8 +145,7 @@ select {
   justify-content: start;
   align-items: center;
   flex-direction: row;
-  margin-top: 120px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 #hero-greeting {
@@ -167,7 +178,6 @@ select {
 
 #hero-photo > p {
   padding: 16px;
-  border-radius: 3px;
   border: #a9b1d6 solid 2px;
   font-style: italic;
 }
@@ -194,15 +204,15 @@ select {
 }
 
 #project-list h4 {
-  font-size: 18px;
   margin-top: 8px;
   margin-bottom: 8px;
+  font-size: 18px;
 }
 
 #project-list p {
   margin: 0;
-  font-size: 14px;
   text-align: justify;
+  font-size: 14px;
 }
 
 #skillSet {
@@ -272,17 +282,6 @@ select {
 #about-me p {
   max-width: 900px;
   text-align: justify;
-}
-
-#aboutme-container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-}
-
-#aboutme-container > div {
-  height: 120px;
 }
 
 footer > p {

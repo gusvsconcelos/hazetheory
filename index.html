@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,13 +14,10 @@
   <body>
     <div class="container">
       <!-- Navigation --->
-
       <div id="media">
-        <div id="line-media"></div>
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-        <div id="line-media"></div>
       </div>
 
       <header>
@@ -47,28 +44,29 @@
 
       <!-- Hero section --->
       <section id="hero" aria-label="Apresentação pessoal">
-        <div id="line"></div>
-        <span id="hero-greeting">
-          <h1>Eu sou o Gus.</h1>
-          <p>
-            Desenvolvedor full stack que entrega soluções completas, do banco de
-            dados à interface, priorizando clareza, desempenho e excelente
-            experiência do usuário.
-          </p>
-          <a id="contact-me" href="#">
-            <i class="fa-solid fa-paper-plane"></i>Fale comigo
-          </a>
-        </span>
+        <div class="text">
+          <div id="hero-greeting">
+            <h1>Eu sou o Gus.</h1>
+            <p>
+              Desenvolvedor full stack que entrega soluções completas, do banco
+              de dados à interface, priorizando clareza, desempenho e excelente
+              experiência do usuário.
+            </p>
+            <a id="contact-me" href="#">
+              <i class="fa-solid fa-paper-plane"></i>Fale comigo
+            </a>
+          </div>
+        </div>
 
         <br />
 
-        <span id="hero-photo">
+        <div id="hero-photo">
           <img
             src="./assets/gus_photo_low.png"
             alt="Fotografia de Gustavo Vasconcelos"
           />
           <p id="quote">"It's better to be a pirate than join the navy."</p>
-        </span>
+        </div>
       </section>
 
       <!-- Main content --->
@@ -82,14 +80,12 @@
                 src="./assets/project_placeholder.jpg"
                 alt="project-thumbnail"
               />
-
               <div id="project-tech">
                 <span class="tech-javascript">JAVASCRIPT</span>
                 <span class="tech-python">PYTHON</span>
                 <span class="tech-html">HTML</span>
                 <span class="tech-css">CSS</span>
               </div>
-
               <h4><strong>Project#1</strong></h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
@@ -102,14 +98,12 @@
                 src="./assets/project_placeholder.jpg"
                 alt="project-thumbnail"
               />
-
               <div id="project-tech">
                 <span class="tech-javascript">JAVASCRIPT</span>
                 <span class="tech-python">PYTHON</span>
                 <span class="tech-html">HTML</span>
                 <span class="tech-css">CSS</span>
               </div>
-
               <h4><strong>Project#2</strong></h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
@@ -122,14 +116,12 @@
                 src="./assets/project_placeholder.jpg"
                 alt="project-thumbnail"
               />
-
               <div id="project-tech">
                 <span class="tech-javascript">JAVASCRIPT</span>
                 <span class="tech-python">PYTHON</span>
                 <span class="tech-html">HTML</span>
                 <span class="tech-css">CSS</span>
               </div>
-
               <h4><strong>Project#3</strong></h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
@@ -141,6 +133,7 @@
 
         <section id="skills" aria-label="Habilidades">
           <h2><span class="hashtag">#</span>habilidades</h2>
+
           <div id="skillSet">
             <span class="tech-javascript">JAVASCRIPT</span>
             <span class="tech-typescript">TYPESCRIPT</span>
@@ -156,8 +149,7 @@
         <section id="about-me" aria-label="Sobre mim">
           <h2><span class="hashtag">#</span>sobre mim</h2>
 
-          <div id="aboutme-container">
-            <div id="line"></div>
+          <div class="text">
             <p>
               Estudante de
               <strong>Análise e Desenvolvimento de Sistemas</strong> e
@@ -175,6 +167,7 @@
         </section>
       </main>
     </div>
+
     <footer>
       <p>
         <i class="fa-regular fa-copyright"></i>Powered by Gustavo Vasconcelos
