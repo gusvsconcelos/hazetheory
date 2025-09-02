@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #e6e7ed;
+  color: #b4f9f8;
 }
 
 p {
@@ -53,9 +53,9 @@ img {
   flex-shrink: 0;
   height: auto;
   align-self: stretch;
-  width: 4px;
+  width: 3px;
   border-radius: 100px;
-  background-color: #f7768e;
+  background-color: #b4f9f8;
 }
 
 #media {
@@ -75,7 +75,7 @@ img {
 #media::after {
   content: "";
   flex-grow: 1;
-  height: 3px;
+  height: 2px;
   border-radius: 100px;
   background-color: #c0caf5;
 }
@@ -97,6 +97,10 @@ header h1 {
   font-size: 48px;
 }
 
+header h1:hover {
+  color: #c0caf5;
+}
+
 header h2 {
   margin: 0;
   font-size: 16px;
@@ -115,7 +119,6 @@ nav > a {
 nav > a:hover {
   text-decoration: underline;
   text-underline-offset: 8px;
-  color: #b4f9f8;
 }
 
 #lang {
@@ -145,7 +148,6 @@ select {
   justify-content: start;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 200px;
 }
 
 #hero-greeting {
@@ -182,10 +184,21 @@ select {
   font-style: italic;
 }
 
+main h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  flex-grow: 1;
+  margin-top: 12px;
+  border-radius: 100px;
+  background-color: #bb9af7;
+}
+
 #project-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 150px;
   gap: 14px;
 }
 
@@ -218,7 +231,6 @@ select {
 #skillSet {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 150px;
 }
 
 #skillSet > span,
@@ -275,18 +287,14 @@ select {
   background-color: #b4f9f8;
 }
 
-#about-me {
-  margin-bottom: 150px;
-}
-
 #about-me p {
-  max-width: 900px;
+  max-width: 1024;
   text-align: justify;
 }
 
 footer > p {
   margin: 0;
-  padding: 12px;
+  padding: 8px;
   text-align: center;
   font-size: 12px;
   background-color: #11111b;
