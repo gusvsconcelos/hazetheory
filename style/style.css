@@ -234,16 +234,39 @@ main h2::after {
   font-size: 18px;
 }
 
-#skillSet {
+#skills-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: start;
+  gap: 16px;
 }
 
-#skillSet > span,
-#project-tech > span {
-  margin: 4px;
+.skill-box {
+  border: 2px solid #bb9af7;
+  height: fit-content;
+  max-width: 240px;
+}
+
+.skill-box > h3 {
+  border-bottom: 2px solid #bb9af7;
+  margin: 0;
+  padding: 8px;
+  color: #bb9af7;
+}
+
+.skill-box > div {
   padding: 6px;
-  border-radius: 2px;
+}
+
+.skillSet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillSet > span,
+#project-tech > span {
+  padding: 6px;
   font-size: 16px;
   font-weight: bold;
   color: #1a1b26;
@@ -291,6 +314,38 @@ main h2::after {
 
 .tech-tailwindcss {
   background-color: #b4f9f8;
+}
+
+.tech-postgresql {
+  background-color: #7dcfff;
+}
+
+.tech-neovim {
+  background-color: #9ece6a;
+}
+
+.tech-vscode {
+  background-color: #7aa2f7;
+}
+
+.tech-linux {
+  background-color: cornsilk;
+}
+
+.tech-figma {
+  background-color: gainsboro;
+}
+
+.tech-plasma {
+  background-color: #7aa2f7;
+}
+
+.tech-arch {
+  background-color: #2ac3de;
+}
+
+.tech-git {
+  background-color: #e0af68;
 }
 
 #contact a {
