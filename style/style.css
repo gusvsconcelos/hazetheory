@@ -11,7 +11,7 @@ body {
   color: #c0caf5;
 }
 
-.container {
+#container {
   margin: auto;
   max-width: 1080px;
 }
@@ -147,6 +147,8 @@ select {
   justify-content: start;
   align-items: center;
   flex-direction: row;
+  gap: 64px;
+  margin: 64px 0 64px 0;
 }
 
 #hero-greeting {
@@ -176,11 +178,21 @@ select {
   width: 500px;
 }
 
-#hero-photo > p {
+#working-on {
+  min-width: 420px;
   padding: 16px;
-  border: #a9b1d6 solid 2px;
+  border-radius: 4px;
+  box-shadow: 8px 8px 0 black;
+  background-color: #1a1b26;
+  text-align: center;
   font-style: italic;
   color: #c0caf5;
+}
+
+#working-on i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #bb9af7;
 }
 
 main h2::after {
@@ -204,8 +216,9 @@ main h2::after {
 #project-list > div {
   width: 300px;
   padding: 14px;
-  border-radius: 3px;
-  background-color: #000000;
+  border-radius: 4px;
+  background-color: #1a1b26;
+  box-shadow: 8px 8px 0 black;
 }
 
 #project-list img {
@@ -242,16 +255,17 @@ main h2::after {
 }
 
 .skill-box {
-  border: 2px solid #bb9af7;
   height: fit-content;
   max-width: 240px;
+  border-radius: 4px;
+  background-color: #1a1b26;
+  box-shadow: 8px 8px 0 black;
 }
 
 .skill-box > h3 {
-  border-bottom: 2px solid #bb9af7;
   margin: 0;
   padding: 8px;
-  color: #bb9af7;
+  color: #c0caf5;
 }
 
 .skill-box > div {
@@ -261,91 +275,91 @@ main h2::after {
 .skillSet {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .skillSet > span,
 #project-tech > span {
   padding: 6px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
-  color: #1a1b26;
+  background-color: black;
 }
 
 #project-tech {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6px;
 }
 
 #project-tech > span {
-  margin: 3px;
-  padding: 4px;
+  margin-right: 4px;
+  padding: 6px;
   font-size: 12px;
 }
 
 .tech-javascript {
-  background-color: #ff9e64;
+  color: #ff9e64;
 }
 
 .tech-typescript {
-  background-color: #7aa2f7;
+  color: #7aa2f7;
 }
 
 .tech-react {
-  background-color: #7dcfff;
+  color: #7dcfff;
 }
 
 .tech-nodejs {
-  background-color: #9ece6a;
+  color: #9ece6a;
 }
 
 .tech-python {
-  background-color: #e0af68;
+  color: #e0af68;
 }
 
 .tech-html {
-  background-color: #f7768e;
+  color: #f7768e;
 }
 
 .tech-css {
-  background-color: #2ac3de;
+  color: #2ac3de;
 }
 
 .tech-tailwindcss {
-  background-color: #b4f9f8;
+  color: #b4f9f8;
 }
 
 .tech-postgresql {
-  background-color: #7dcfff;
+  color: #7dcfff;
 }
 
 .tech-neovim {
-  background-color: #9ece6a;
+  color: #9ece6a;
 }
 
 .tech-vscode {
-  background-color: #7aa2f7;
+  color: #7aa2f7;
 }
 
 .tech-linux {
-  background-color: cornsilk;
+  color: #1793d1; /* cor Arch Linux */
 }
 
 .tech-figma {
-  background-color: gainsboro;
-}
-
-.tech-plasma {
-  background-color: #7aa2f7;
-}
-
-.tech-arch {
-  background-color: #2ac3de;
+  color: #ff7262;
 }
 
 .tech-git {
-  background-color: #e0af68;
+  color: #f34f29;
+}
+
+.tech-docker {
+  color: #2496ed;
+}
+
+.tech-github {
+  color: #f5f5f5;
 }
 
 #contact a {
