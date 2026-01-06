@@ -43,6 +43,10 @@ strong {
   color: #bb9af7;
 }
 
+strong > a {
+  color: #bb9af7;
+}
+
 .hashtag {
   color: #bb9af7;
 }

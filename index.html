@@ -14,11 +14,19 @@
   <body>
     <div id="container">
       <!-- Navigation --->
-      <!-- <div id="media"> -->
-      <!--   <a href="#"><i class="fab fa-github"></i></a> -->
-      <!--   <a href="#"><i class="fab fa-linkedin"></i></a> -->
-      <!--   <a href="#"><i class="fab fa-instagram"></i></a> -->
-      <!-- </div> -->
+      <div id="media">
+        <a href="https://github.com/gusvsconcelos" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gusvsconcelos/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/gusvsconcelos/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
       <header>
         <div id="title">
@@ -30,12 +38,15 @@
 
         <nav>
           <a href="index.html"><span class="hashtag">#</span>página inicial</a>
-          <a href="index.html#projects"
-            ><span class="hashtag">#</span>projetos</a
-          >
-          <a href="index.html#about-me"
-            ><span class="hashtag">#</span>sobre mim</a
-          >
+
+          <a href="index.html#projects">
+            <span class="hashtag">#</span>projetos
+          </a>
+
+          <a href="index.html#about-me">
+            <span class="hashtag">#</span>sobre mim
+          </a>
+
           <a href="index.html#contact"><span class="hashtag">#</span>contato</a>
 
           <span id="lang">
@@ -53,25 +64,36 @@
         <div class="text">
           <div id="hero-greeting">
             <h1>Eu sou o <strong>Gustavo</strong></h1>
+
             <p>
               <strong>Desenvolvedor full stack</strong> que entrega soluções
               completas, do banco de dados à interface, priorizando clareza,
               desempenho e excelente experiência do usuário.
             </p>
-            <a href="#"> <i class="fa-solid fa-paper-plane"></i>Fale comigo </a>
+
+            <a href="mailto:gustavo.vs.me@gmail.com">
+              <i class="fa-solid fa-paper-plane"></i>Fale comigo
+            </a>
           </div>
         </div>
-
-        <br />
 
         <div id="hero-photo">
           <img
             src="./assets/photograph.png"
             alt="Fotografia de Gustavo Vasconcelos"
           />
+
           <p id="working-on">
             <i class="fa-solid fa-code-commit"></i>
-            Atualmente trabalhando em <strong>Portfólio</strong>
+            Atualmente trabalhando em
+            <strong>
+              <a
+                href="https://github.com/gusvsconcelos/hazetheory"
+                target="_blank"
+              >
+                Portfólio
+              </a>
+            </strong>
           </p>
         </div>
       </section>
@@ -80,81 +102,90 @@
       <main>
         <section id="projects" aria-label="Projects">
           <h2><span class="hashtag">#</span>projetos</h2>
+
           <div id="project-list">
             <div id="project-1">
               <img src="./assets/placeholder.png" alt="project-thumbnail" />
+
               <div id="project-tech">
-                <span class="tech-javascript"
-                  ><i class="fa-brands fa-js"></i> JavaScript</span
-                >
-                <span class="tech-typescript"
-                  ><i class="fa-solid fa-code"></i> TypeScript</span
-                >
-                <span class="tech-python"
-                  ><i class="fa-brands fa-python"></i> Python</span
-                >
-                <span class="tech-react"
-                  ><i class="fa-brands fa-react"></i> React</span
-                >
-                <span class="tech-nodejs"
-                  ><i class="fa-brands fa-node-js"></i> Node.js</span
-                >
+                <span class="tech-typescript">
+                  <i class="fa-solid fa-code"></i> TypeScript
+                </span>
+
+                <span class="tech-react">
+                  <i class="fa-brands fa-react"></i> React
+                </span>
+
+                <span class="tech-tailwindcss">
+                  <i class="fa-solid fa-wind"></i> TailwindCSS
+                </span>
               </div>
-              <h4>Project#1</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#" class="project-repo">
+
+              <h4>Movie Roulette</h4>
+              <p>
+                Movie Roulette is a website that helps users decide what movie
+                to watch by randomly selecting one from TMDB, while also
+                displaying movies currently in theaters.
+              </p>
+
+              <a
+                href="https://github.com/gusvsconcelos/movie-roulette"
+                target="_blank"
+                class="project-repo"
+              >
                 <i class="fa-brands fa-github"></i> Github
               </a>
             </div>
 
             <div id="project-2">
               <img src="./assets/placeholder.png" alt="project-thumbnail" />
+
               <div id="project-tech">
-                <span class="tech-javascript"
-                  ><i class="fa-brands fa-js"></i> JavaScript</span
-                >
-                <span class="tech-typescript"
-                  ><i class="fa-solid fa-code"></i> TypeScript</span
-                >
-                <span class="tech-python"
-                  ><i class="fa-brands fa-python"></i> Python</span
-                >
-                <span class="tech-react"
-                  ><i class="fa-brands fa-react"></i> React</span
-                >
-                <span class="tech-nodejs"
-                  ><i class="fa-brands fa-node-js"></i> Node.js</span
-                >
+                <span class="tech-javascript">
+                  <i class="fa-brands fa-js"></i> JavaScript
+                </span>
+
+                <span class="tech-html">
+                  <i class="fa-brands fa-html5"></i> HTML5
+                </span>
+
+                <span class="tech-css">
+                  <i class="fa-brands fa-css3-alt"></i> CSS3
+                </span>
               </div>
-              <h4>Project#2</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#" class="project-repo">
+
+              <h4>Dailyway</h4>
+              <p>
+                Dailyway is a simple daily task and habit tracker focused on
+                maintaining streaks.
+              </p>
+
+              <a
+                href="https://github.com/gusvsconcelos/dailyway"
+                target="_blank"
+                class="project-repo"
+              >
                 <i class="fa-brands fa-github"></i> Github
               </a>
             </div>
 
             <div id="project-3">
               <img src="./assets/placeholder.png" alt="project-thumbnail" />
+
               <div id="project-tech">
-                <span class="tech-javascript"
-                  ><i class="fa-brands fa-js"></i> JavaScript</span
-                >
-                <span class="tech-typescript"
-                  ><i class="fa-solid fa-code"></i> TypeScript</span
-                >
-                <span class="tech-python"
-                  ><i class="fa-brands fa-python"></i> Python</span
-                >
-                <span class="tech-react"
-                  ><i class="fa-brands fa-react"></i> React</span
-                >
-                <span class="tech-nodejs"
-                  ><i class="fa-brands fa-node-js"></i> Node.js</span
-                >
+                <span class="tech-python">
+                  <i class="fa-brands fa-python"></i> Python
+                </span>
               </div>
-              <h4>Project#3</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-              <a href="#" class="project-repo">
+
+              <h4>StakeLab</h4>
+              <p>Sports Betting Simulator.</p>
+
+              <a
+                href="https://github.com/gusvsconcelos/stakelab"
+                target="_blank"
+                class="project-repo"
+              >
                 <i class="fa-brands fa-github"></i> Github
               </a>
             </div>
@@ -175,6 +206,9 @@
                   <span class="tech-typescript"
                     ><i class="fa-solid fa-code"></i> TypeScript</span
                   >
+                  <span class="tech-php"
+                    ><i class="fa-brands fa-php"></i> PHP</span
+                  >
                   <span class="tech-python"
                     ><i class="fa-brands fa-python"></i> Python</span
                   >
@@ -193,6 +227,9 @@
                   <span class="tech-react"
                     ><i class="fa-brands fa-react"></i> React</span
                   >
+                  <span class="tech-laravel"
+                    ><i class="fa-brands fa-laravel"></i> Laravel</span
+                  >
                   <span class="tech-nodejs"
                     ><i class="fa-brands fa-node-js"></i> Node.js</span
                   >
@@ -208,6 +245,9 @@
                   <span class="tech-postgresql"
                     ><i class="fa-solid fa-database"></i> PostgreSQL</span
                   >
+                  <span class="tech-mysql"
+                    ><i class="fa-solid fa-database"></i> MySQL</span
+                  >
                 </div>
               </div>
 
@@ -217,9 +257,9 @@
                   <span class="tech-neovim"
                     ><i class="fa-solid fa-terminal"></i> Neovim</span
                   >
-                  <span class="tech-vscode"
-                    ><i class="fa-solid fa-code"></i> VSCode</span
-                  >
+                  <!-- <span class="tech-vscode" -->
+                  <!--   ><i class="fa-solid fa-code"></i> VSCode</span -->
+                  <!-- > -->
                   <span class="tech-docker"
                     ><i class="fa-brands fa-docker"></i> Docker</span
                   >
@@ -232,9 +272,9 @@
                   <span class="tech-linux"
                     ><i class="fa-brands fa-linux"></i> Linux</span
                   >
-                  <span class="tech-figma"
-                    ><i class="fa-brands fa-figma"></i> Figma</span
-                  >
+                  <!-- <span class="tech-figma" -->
+                  <!--   ><i class="fa-brands fa-figma"></i> Figma</span -->
+                  <!-- > -->
                 </div>
               </div>
             </div>
@@ -273,7 +313,7 @@
             Quer trabalhar comigo ou trocar ideias sobre projetos? Não hesite em
             me contatar:
           </p>
-          <a href="#">
+          <a href="mailto:gustavo.vs.me@gmail.com">
             <i class="fa-solid fa-envelope"></i>
             gustavo.vs.me@gmail.com</a
           >
